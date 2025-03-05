@@ -1,48 +1,50 @@
 footer {
-    position: sticky;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 56px;
+  position: sticky;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0px -1px 3px rgba(3, 7, 18, 0.2),
+    0px -4px 13px rgba(3, 7, 18, 0.16), 0px -9px 29px rgba(3, 7, 18, 0.12),
+    0px -15px 51px rgba(3, 7, 18, 0.08), 0px -24px 80px rgba(3, 7, 18, 0.04);
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-secondary);
 }
 
 .nav__list {
-    display: flex;
-    width: 100%;
-    margin: var(--spacing-sm);
-    display: flex;
-    gap: var(--spacing-sm);
-
+  display: flex;
+  width: 100%;
+  margin: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-sm);
 }
 
 .nav__item__inactive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: var(--spacing-xs);
-    border-radius: var(--spacing-xs);
-    background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-xs);
+  border-radius: var(--spacing-xs);
+  background-color: var(--color-bg);
 }
 
 .nav__item__active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: var(--spacing-xs);
-    border-radius: var(--spacing-xs);
-    background-color: var(--color-primary-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-xs);
+  border-radius: var(--spacing-xs);
+  background-color: var(--color-primary-dark);
 }
 
 .nav__icon {
-    width: 24px;
+  width: 24px;
 }
