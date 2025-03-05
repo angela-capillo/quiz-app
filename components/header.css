@@ -3,6 +3,13 @@ header {
     justify-content: center;
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-md);
-    font-size: var(--text-lg);
-    font-weight: 600;
+}
+
+.header__image {
+    max-width: 50px;
+}
+
+.header__title {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 40px;
 }
