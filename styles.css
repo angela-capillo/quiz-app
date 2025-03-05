@@ -43,7 +43,7 @@
 
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+  list-style-type: none;
 }
 
 /* Elements */
