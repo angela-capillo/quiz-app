@@ -23,14 +23,24 @@ footer {
 
 }
 
-.nav__item {
+.nav__item__inactive {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: var(--spacing-xs);
     border-radius: var(--spacing-xs);
-    background-color: var(--tag-bg);
+    background-color: var(--color-bg);
+}
+
+.nav__item__active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-xs);
+    border-radius: var(--spacing-xs);
+    background-color: var(--color-primary-light);
 }
 
 .nav__icon {
