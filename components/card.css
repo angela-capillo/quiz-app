@@ -42,6 +42,7 @@
 
   .card__bookmark {
     position: absolute;
+    width: 40px;
     right: var(--spacing-xs);
-    top: -8px;
+    top: -10px;
   }
