@@ -9,13 +9,14 @@
   <body>
     <header class="header__title">Quizzerone!</header>
     <main class="main-content">
-      <ul class="main-content__question-list">
+      <ul role="list" class="main-content__question-list">
         <li class="card">
+            <img class="card__bookmark" src="./assets/icons/bookmark.svg">
           <p class="card__text">What is the capital of Canada?</p>
           <button class="card__button">Show answer</button>
-          <ul class="categories">
-            <li class="category-tag">Geography</li>
-            <li class="category-tag">General Knowledge</li>
+          <ul role="list" class="card__categories">
+            <li class="card__tag">Geography</li>
+            <li class="card__tag">General Knowledge</li>
           </ul>
         </li>
       </ul>

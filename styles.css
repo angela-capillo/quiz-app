@@ -1,0 +1,58 @@
+@import "./components/header.css";
+@import "./components/main.css";
+@import "./components/card.css";
+@import "./components/footer.css";
+
+/* Variables */
+
+:root {
+    --text-xs: 0.725rem;
+    --text-sm: 0.85rem;
+    --text-md: 1rem;
+    --text-lg: 1.5rem;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+
+    --color-primary-dark: rebeccapurple;
+    --color-primary-light: mediumpurple;
+    --color-bg: lavender;
+    --color-secondary: green;
+    --color-white: white;
+    --color-black: black;
+
+    --card-bg: pink;
+    --card-text: black;
+
+    --tag-bg: white;
+    --tag-text: grey;
+}
+
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Elements */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 24px;
+}
