@@ -19,15 +19,14 @@
     --color-primary-dark: rebeccapurple;
     --color-primary-light: mediumpurple;
     --color-bg: lavender;
-    --color-secondary: green;
     --color-white: white;
     --color-black: black;
 
-    --card-bg: pink;
+    --card-bg: lavender;
     --card-text: black;
 
     --tag-bg: white;
-    --tag-text: grey;
+    --tag-text: rebeccapurple;
 }
 
 
@@ -50,6 +49,8 @@ ol[role='list'] {
 
 body {
     font-family: "Capriola", sans-serif;
+    background-image: linear-gradient(to bottom right, azure, yellow);
+
 }
 
 /* Typography */

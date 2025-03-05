@@ -5,6 +5,10 @@ header {
     margin-bottom: var(--spacing-md);
 }
 
+.header__image {
+    max-width: 50px;
+}
+
 .header__title {
     font-family: "Bungee Spice", sans-serif;
     font-size: 40px;
