@@ -1,3 +1,7 @@
+main {
+    margin: var(--spacing-sm);
+}
+
 .main-content__question-list {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+}
+
+.nav {
+    height: 24px;
+}
+
+.nav__list {
+    display: flex;
+    background-color: var(--color-primary-dark);
+    gap: var(--spacing-xs);
+
+}
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing-xs);
+    border-radius: var(--spacing-xs);
+    background-color: var(--tag-bg);
+}
+
+.nav__icon {
+    width: 24px;
+}
