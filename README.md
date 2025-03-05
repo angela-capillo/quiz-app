@@ -8,7 +8,7 @@ This is my first app made with HTML and CSS. I tried to use the knowledge I got 
 
 1. What I did at first was to just draft the app with some basic structure and classes and variables, did multiple commits as soon as I did some significative changes (e.g. finalised new components in css), and pushed everything. One thing I did (probably wrong :D) was to just work on the main branch -- a bit because I was lazy and a bit because I just wanted a full draft to be kind of ready before working on many things on different branches. Though from now on I'll start creating new branches for the fnext steps!
 
-2. Since I am going to use more branches from now on, my idea is to create a new branch for the following edits:
+2. Since I am going to use more branches from now on, my idea is to create a new branch for each the following edits:
 
     - Create the bookmark page
     - Create the profile page (tbd)
