@@ -5,5 +5,5 @@ main {
 .main-content__question-list {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md)
+    gap: var(--spacing-md);
 }

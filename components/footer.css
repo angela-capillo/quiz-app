@@ -26,6 +26,7 @@ footer {
 .nav__item {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding: var(--spacing-xs);
     border-radius: var(--spacing-xs);
