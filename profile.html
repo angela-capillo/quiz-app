@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizicorn!</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Capriola&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header__image"
+        src="./assets/images/unicorn-emoji.png"
+        alt="Doge with cool glasses"
+      />
+      <h1 class="header__title">Quizicorn!</h1>
+    </header>
+    <main>
+      <div class="main-content__profile-container">
+        <section class="main-content__profile-heading">
+          <img
+            class="main-content__profile-img"
+            src="./assets/images/charlie-unicorn.png"
+          />
+          <p class="main-content__profile-heading-text">Charlie</p>
+        </section>
+        <section class="main-content__profile-about">
+          <h2>About me</h2>
+          <p class="main-content__profile-about-text">I am a lethargic and pessimistic unicorn, rn on an adventure to the magical Candy Mountain with Pink and Blue.</p>
+          <ul role="list" class="main-content__counter-container">
+            <li class="main-content__counter-tag">
+              <img
+                src="./assets/icons/question-purple.svg"
+                alt="Questions created"
+              />
+              <p>54</p>
+            </li>
+            <li class="main-content__counter-tag">
+              <img
+                src="./assets/icons/bookmark-purple.svg"
+                alt="Bookmarks created"
+              />
+              <p>21</p>
+            </li>
+          </ul>
+        </section>
+        <section class="main-content__profile-settings">
+          <h2>Settings</h2>
+          <div class="settings-block">
+            <label>Dark mode</label>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <nav class="nav">
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__icon-button"
+              ><img
+                class="nav__icon"
+                src="./assets/icons/home-purple.svg"
+                alt="Home"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="./bookmarks.html" class="nav__icon-button"
+              ><img
+                class="nav__icon"
+                src="./assets/icons/bookmark-purple.svg"
+                alt="Bookmarks"
+            /></a>
+          </li>
+          <li class="nav__item nav__item__active">
+            <a href="./profile.html" class="nav__icon-button"
+              ><img
+                class="nav__icon"
+                src="./assets/icons/profile-white.svg"
+                alt="Profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

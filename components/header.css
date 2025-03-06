@@ -2,8 +2,8 @@ header {
     display: flex;
     gap: var(--spacing-sm);
     justify-content: center;
-    margin-top: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
 }
 
 .header__image {

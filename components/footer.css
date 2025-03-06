@@ -1,8 +1,10 @@
 footer {
-  position: sticky;
-  left: 0px;
-  bottom: 0px;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
   width: 100%;
+  max-width: 420px;
   height: 56px;
   box-shadow: 0px -1px 3px rgba(3, 7, 18, 0.2),
     0px -4px 13px rgba(3, 7, 18, 0.16), 0px -9px 29px rgba(3, 7, 18, 0.12),
@@ -25,7 +27,7 @@ footer {
   gap: var(--spacing-sm);
 }
 
-.nav__item__inactive {
+.nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +38,6 @@ footer {
 }
 
 .nav__item__active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: var(--spacing-xs);
-  border-radius: var(--spacing-xs);
   background-color: var(--color-primary-dark);
 }
 
