@@ -28,14 +28,37 @@
             class="main-content__profile-img"
             src="./assets/images/charlie-unicorn.png"
           />
-          <p class="main-content__profile-heading-text">Charlie The Unicorn</p>
+          <p class="main-content__profile-heading-text">Charlie</p>
         </section>
         <section class="main-content__profile-about">
           <h2>About me</h2>
-          <p>Sparkle sparkle!</p>
+          <p class="main-content__profile-about-text">I am a lethargic and pessimistic unicorn, rn on an adventure to the magical Candy Mountain with Pink and Blue.</p>
+          <ul role="list" class="main-content__counter-container">
+            <li class="main-content__counter-tag">
+              <img
+                src="./assets/icons/bookmark-purple.svg"
+                alt="Questions created"
+              />
+              <p>54</p>
+            </li>
+            <li class="main-content__counter-tag">
+              <img
+                src="./assets/icons/bookmark-purple.svg"
+                alt="Bookmarks created"
+              />
+              <p>21</p>
+            </li>
+          </ul>
         </section>
         <section class="main-content__profile-settings">
           <h2>Settings</h2>
+          <div class="settings-block">
+            <label>Dark mode</label>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
         </section>
       </div>
     </main>
@@ -46,7 +69,7 @@
             <a href="./index.html" class="nav__icon-button"
               ><img
                 class="nav__icon"
-                src="./assets/icons/home-white.svg"
+                src="./assets/icons/home-purple.svg"
                 alt="Home"
             /></a>
           </li>
@@ -58,11 +81,11 @@
                 alt="Bookmarks"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item__active">
             <a href="#" class="nav__icon-button"
               ><img
                 class="nav__icon"
-                src="./assets/icons/profile-purple.svg"
+                src="./assets/icons/profile-white.svg"
                 alt="Profile"
             /></a>
           </li>
