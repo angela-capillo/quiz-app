@@ -1,6 +1,6 @@
 main {
     margin: var(--spacing-md);
-    height: 100dvh;
+    /* height: 100dvh; */
 }
 
 .main-content__question-list {

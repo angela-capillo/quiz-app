@@ -51,10 +51,10 @@ ol[role='list'] {
 
 body {
     min-height: 100vh;
+    margin-bottom: 100px;
     font-family: "Capriola", sans-serif;
     background-image: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
     , hotpink);
-
 }
 
   
