@@ -1,4 +1,4 @@
-# Quizzerone!
+# Quizicorn!
 
 ## Background
 
