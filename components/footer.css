@@ -25,7 +25,7 @@ footer {
   gap: var(--spacing-sm);
 }
 
-.nav__item__inactive {
+.nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +36,6 @@ footer {
 }
 
 .nav__item__active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: var(--spacing-xs);
-  border-radius: var(--spacing-xs);
   background-color: var(--color-primary-dark);
 }
 
