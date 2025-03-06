@@ -7,3 +7,33 @@ main {
     flex-direction: column;
     gap: var(--spacing-lg);
 }
+
+.main-content__profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: var(--spacing-lg);
+    gap: var(--spacing-md);
+    border-radius: var(--spacing-md);
+    min-width: 300px;
+    flex: 1 1 30%;
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.16), 0px 5px 4px rgba(3, 7, 18, 0.13),
+      0px 12px 9px rgba(3, 7, 18, 0.1), 0px 20px 15px rgba(3, 7, 18, 0.06),
+      0px 32px 24px rgba(3, 7, 18, 0.03);
+}
+
+.main-content__profile-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.main-content__profile-img {
+    max-width: 80px;
+    border-radius: var(--spacing-md);
+}
