@@ -1,5 +1,6 @@
 main {
     margin: var(--spacing-md);
+    height: 100dvh;
 }
 
 .main-content__question-list {
@@ -9,7 +10,6 @@ main {
 }
 
 .main-content__profile-container {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,4 +36,9 @@ main {
 .main-content__profile-img {
     max-width: 80px;
     border-radius: var(--spacing-md);
+}
+
+.main-content__profile-heading-text {
+    font-size: var(--text-lg);
+
 }

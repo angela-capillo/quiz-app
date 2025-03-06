@@ -49,6 +49,7 @@ ol[role='list'] {
 /* Elements */
 
 body {
+    min-height: 100vh;
     font-family: "Capriola", sans-serif;
     background-image: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
     , hotpink);
