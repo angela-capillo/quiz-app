@@ -1,8 +1,10 @@
 footer {
   position: fixed;
-  left: 0;
+  transform: translateX(-50%);
+  left: 50%;
   bottom: 0;
   width: 100%;
+  max-width: 420px;
   height: 56px;
   box-shadow: 0px -1px 3px rgba(3, 7, 18, 0.2),
     0px -4px 13px rgba(3, 7, 18, 0.16), 0px -9px 29px rgba(3, 7, 18, 0.12),

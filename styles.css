@@ -49,12 +49,18 @@ ol[role='list'] {
 
 /* Elements */
 
+html {
+    background-color: #181818;
+}
+
 body {
+    max-width: 420px;
     min-height: 100vh;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     font-family: "Capriola", sans-serif;
     background-image: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
     , hotpink);
+    margin: auto;
 }
 
   
