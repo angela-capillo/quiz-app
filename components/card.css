@@ -23,6 +23,11 @@
   text-align: center;
 }
 
+.card__text__answer{
+  color: var(--color-primary-dark);
+  font-size: var(--text-md);
+}
+
 .card__categories {
   display: flex;
   gap: var(--spacing-sm);
