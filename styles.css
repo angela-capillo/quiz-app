@@ -63,4 +63,7 @@ body {
     margin: auto;
 }
 
-  
+a:focus-visible, button:focus-visible {
+  outline-offset: 2px;
+  outline-color: indigo;
+}
