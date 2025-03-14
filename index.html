@@ -11,30 +11,31 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Capriola&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
       <img
         class="header__image"
         src="./assets/images/unicorn-emoji.png"
-        alt="Doge with cool glasses"
+        alt="Unicorn emoji"
       />
       <h1 class="header__title">Quizicorn!</h1>
     </header>
     <main class="main-content">
       <ul class="main-content__question-list" role="list">
         <li class="card">
-          <button class="card__icon-button" name="Bookmark">
+          <button class="card__icon-button" name="Bookmark" data-js="bookmark-button">
             <img
-              class="card__bookmark"
-              src="./assets/icons/bookmark-purple.svg"
+              class="card__bookmark bookmarked"
+              src="./assets/icons/bookmark-purple.svg" data-js="bookmark-icon"
             />
           </button>
           <p class="card__text">
             Which country has the unicorn as its national animal?
           </p>
-          <button class="card__button">Show answer</button>
-          <p class="card__text card__text__answer text__hidden">
+          <button class="card__button" data-js="show-button">Show answer</button>
+          <p class="card__text card__text__answer text__hidden" data-js="card-answer">
             Scotland.
           </p>
           <ul role="list" class="card__categories">

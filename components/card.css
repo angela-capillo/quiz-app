@@ -46,7 +46,7 @@
   font-family: "Capriola", sans-serif;
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--spacing-lg);
-  background-image: linear-gradient(to bottom, mediumpurple, MediumOrchid);
+  background-image: var(--gradient-button);
   border: none;
   color: var(--color-white);
 }
