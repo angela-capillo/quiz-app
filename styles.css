@@ -7,28 +7,33 @@
 /* Variables */
 
 :root {
-    --text-xs: 0.725rem;
-    --text-sm: 0.85rem;
-    --text-md: 1rem;
-    --text-lg: 1.5rem;
+  --text-xs: 0.725rem;
+  --text-sm: 0.85rem;
+  --text-md: 1rem;
+  --text-lg: 1.5rem;
 
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
 
-    --color-primary-dark: rebeccapurple;
-    --color-primary-light: mediumpurple;
-    --color-secondary: MediumOrchid;
-    --color-bg: lavender;
-    --color-white: white;
-    --color-black: black;
+  --color-primary-extradark: indigo;
+  --color-primary-dark: rebeccapurple;
+  --color-primary-light: mediumpurple;
+  --color-secondary: MediumOrchid;
+  --color-bg: lavender;
+  --color-white: white;
+  --color-black: black;
+  
+  --gradient-bg: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
+  , hotpink);
+  --gradient-button: linear-gradient(to bottom, mediumpurple, MediumOrchid);
 
-    --card-bg: lavender;
-    --card-text: black;
+  --card-bg: lavender;
+  --card-text: black;
 
-    --tag-bg: white;
-    --tag-text: rebeccapurple;
+  --tag-bg: white;
+  --tag-text: rebeccapurple;
 }
 
 
@@ -58,14 +63,13 @@ body {
     min-height: 100vh;
     padding-bottom: 100px;
     font-family: "Capriola", sans-serif;
-    background-image: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
-    , hotpink);
+    background-image: var(--gradient-bg);
     margin: auto;
 }
 
 a:focus-visible, button:focus-visible {
   outline-offset: 2px;
-  outline-color: indigo;
+  outline-color: var(--color-primary-extradark);
 }
 
 .text__hidden {
