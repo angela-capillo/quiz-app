@@ -23,43 +23,48 @@
     </header>
     <main>
       <div class="main-content__profile-container">
-        <section class="main-content__profile-heading">
-          <img
-            class="main-content__profile-img"
-            src="./assets/images/charlie-unicorn.png"
+        <h2>New question card</h2>
+        <form class="">
+          <label for="new-question">Your question:</label>
+          <textarea
+            class="form__textarea"
+            name="new-question"
+            id="new-question"
+            data-js="new-question"
+            rows="4"
+            maxlength="150"
+          ></textarea>
+          <span
+            class="form__span"
+            id="remaining-characters"
+            data-js="remaining-characters"
+            >22 remaining characters</span
+          >
+          <label for="new-answer">Your answer:</label>
+          <textarea
+            class="form__textarea"
+            name="new-answer"
+            id="new-answer"
+            data-js="new-answer"
+            rows="4"
+            maxlength="150"
+          ></textarea>
+          <span
+            class="form__span"
+            id="remaining-characters"
+            data-js="remaining-characters"
+            >22 remaining characters</span
+          >
+          <label for="new-tag">Tag:</label>
+          <input
+            class="form__textinput"
+            type="text"
+            name="new-tag"
+            id="new-tag"
+            data-js="new-tag"
           />
-          <p class="main-content__profile-heading-text">Charlie</p>
-        </section>
-        <section class="main-content__profile-about">
-          <h2>About me</h2>
-          <p class="main-content__profile-about-text">I am a lethargic and pessimistic unicorn, rn on an adventure to the magical Candy Mountain with Pink and Blue.</p>
-          <ul role="list" class="main-content__counter-container">
-            <li class="main-content__counter-tag">
-              <img
-                src="./assets/icons/question-purple.svg"
-                alt="Questions created"
-              />
-              <p>54</p>
-            </li>
-            <li class="main-content__counter-tag">
-              <img
-                src="./assets/icons/bookmark-purple.svg"
-                alt="Bookmarks created"
-              />
-              <p>21</p>
-            </li>
-          </ul>
-        </section>
-        <section class="main-content__profile-settings">
-          <h2>Settings</h2>
-          <div class="settings-block">
-            <label>Dark mode</label>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        </section>
+          <button type="submit" class="form__button">Submit</button>
+        </form>
       </div>
     </main>
     <footer>
@@ -81,19 +86,19 @@
                 alt="Bookmarks"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item__active">
             <a href="./form.html" class="nav__icon-button"
               ><img
                 class="nav__icon"
-                src="./assets/icons/new-card-purple.svg"
+                src="./assets/icons/new-card-white.svg"
                 alt="New quiz card"
             /></a>
           </li>
-          <li class="nav__item nav__item__active">
+          <li class="nav__item">
             <a href="./profile.html" class="nav__icon-button"
               ><img
                 class="nav__icon"
-                src="./assets/icons/profile-white.svg"
+                src="./assets/icons/profile-purple.svg"
                 alt="Profile"
             /></a>
           </li>
