@@ -18,6 +18,9 @@ showButton.addEventListener("click", () => {
     cardAnswer.classList.toggle("text__hidden");
 });
 
+
+
+
 const card = document.createElement("li");
 card.className = "card";
 
