@@ -1,5 +1,5 @@
 const questionForm = document.querySelector('[data-js="form"]');
-const body = document.body;
+const container = document.querySelector('[data-js="form-container"]');
 
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -17,6 +17,15 @@ questionForm.addEventListener("submit", (event) => {
   cardBookmark.className = "card__bookmark";
   cardBookmark.src = "./assets/icons/bookmark-white.svg";
 
+  cardIconButton.addEventListener("click", () => {
+    cardBookmark.classList.toggle("bookmarked");
+    if (cardBookmark.className.includes("bookmarked")) {
+      cardBookmark.src = "./assets/icons/bookmark-purple.svg";
+    } else {
+      cardBookmark.src = "./assets/icons/bookmark-white.svg";
+    }
+  });
+
   const cardTextQuestion = document.createElement("p");
   cardTextQuestion.className = "card__text";
   cardTextQuestion.textContent = data["new-question"];
@@ -29,6 +38,10 @@ questionForm.addEventListener("submit", (event) => {
   cardTextAnswer.className = "card__text card__text__answer text__hidden";
   cardTextAnswer.textContent = data["new-answer"];
 
+  cardButton.addEventListener("click", () => {
+    cardTextAnswer.classList.toggle("text__hidden");
+  });
+
   const cardCategories = document.createElement("ul");
   cardCategories.role = "list";
   cardCategories.className = "card__categories";
@@ -40,28 +53,56 @@ questionForm.addEventListener("submit", (event) => {
   cardCategories.append(cardTag);
   cardIconButton.append(cardBookmark);
 
-  card.append(cardIconButton, cardTextQuestion, cardButton, cardCategories);
-  body.append(card);
+  card.append(
+    cardIconButton,
+    cardTextQuestion,
+    cardButton,
+    cardTextAnswer,
+    cardCategories
+  );
+  container.append(card);
 });
 
 const questionInput = document.querySelector('[data-js="new-question"]');
-const questionInputCounter = document.querySelector('[data-js="question-remaining-characters"]');
+const questionInputCounter = document.querySelector(
+  '[data-js="question-remaining-characters"]'
+);
 
-questionInput.addEventListener("input", () => {
-    const inputLength = questionInput.value.length;
-    const inputMaxLength = questionInput.maxLength;
-    const remainingCharacters = inputMaxLength - inputLength;
-    //console.log(questionRemainingCharacters);
-    questionInputCounter.textContent = remainingCharacters + " remaining characters"
+// questionInput.addEventListener("input", () => {
+//     const inputLength = questionInput.value.length;
+//     const inputMaxLength = questionInput.maxLength;
+//     const remainingCharacters = inputMaxLength - inputLength;
+//     //console.log(questionRemainingCharacters);
+//     questionInputCounter.textContent = remainingCharacters + " remaining characters"
+// });
+
+function remainingCharacterCounter(input) {
+  const inputLength = input.value.length;
+  const inputMaxLength = input.maxLength;
+  const remainingCharacters = inputMaxLength - inputLength;
+  return remainingCharacters;
+}
+
+questionInput.addEventListener("input", (event) => {
+  const remainingCharacters = remainingCharacterCounter(event.target);
+  questionInputCounter.textContent =
+    remainingCharacters + " remaining characters";
 });
 
-
 const answerInput = document.querySelector('[data-js="new-answer"]');
-const answerInputCounter = document.querySelector('[data-js="answer-remaining-characters"]');
+const answerInputCounter = document.querySelector(
+  '[data-js="answer-remaining-characters"]'
+);
 
-answerInput.addEventListener("input", () => {
-    const inputLength = answerInput.value.length;
-    const inputMaxLength = answerInput.maxLength;
-    const remainingCharacters = inputMaxLength - inputLength;
-    answerInputCounter.textContent = remainingCharacters + " remaining characters"
+// answerInput.addEventListener("input", () => {
+//     const inputLength = answerInput.value.length;
+//     const inputMaxLength = answerInput.maxLength;
+//     const remainingCharacters = inputMaxLength - inputLength;
+//     answerInputCounter.textContent = remainingCharacters + " remaining characters"
+// });
+
+answerInput.addEventListener("input", (event) => {
+  const remainingCharacters = remainingCharacterCounter(event.target);
+  answerInputCounter.textContent =
+    remainingCharacters + " remaining characters";
 });

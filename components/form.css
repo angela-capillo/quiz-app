@@ -19,6 +19,7 @@ form {
 
 .form__textarea {
     width: 100%;
+    font-family: "Capriola", sans-serif;
     background-color: var(--card-bg);
     padding: var(--spacing-xs);
     margin-top: var(--spacing-sm);
@@ -32,6 +33,7 @@ form {
 
 .form__textinput {
     width: 100%;
+    font-family: "Capriola", sans-serif;
     background-color: var(--card-bg);
     padding: var(--spacing-xs);
     margin-top: var(--spacing-sm);
