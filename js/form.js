@@ -1,10 +1,10 @@
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
+
 submitButton.addEventListener("submit", (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
-
     console.log(data);
 
 });
