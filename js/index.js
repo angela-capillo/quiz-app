@@ -17,3 +17,6 @@ const cardAnswer = document.querySelector('[data-js="card-answer"]');
 showButton.addEventListener("click", () => {
     cardAnswer.classList.toggle("text__hidden");
 });
+
+
+
