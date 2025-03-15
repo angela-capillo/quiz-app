@@ -19,7 +19,7 @@ showButton.addEventListener("click", () => {
 });
 
 
-
+const submitButton = document.querySelector('[]')
 
 const card = document.createElement("li");
 card.className = "card";
