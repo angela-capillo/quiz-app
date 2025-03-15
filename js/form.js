@@ -5,7 +5,7 @@ questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
+  //console.log(data);
 
   const card = document.createElement("li");
   card.className = "card";
@@ -43,3 +43,11 @@ questionForm.addEventListener("submit", (event) => {
   card.append(cardIconButton, cardTextQuestion, cardButton, cardCategories);
   body.append(card);
 });
+
+const questionInput = document.querySelector('[data-js="new-question"]');
+const questionInputCounter = document.querySelector('[data-js="question-remaining-characters"]');
+
+
+
+const answerInput = document.querySelector('[data-js="new-answer"]');
+const answerInputCounter = document.querySelector('[data-js="answer-remaining-characters"]');
