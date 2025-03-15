@@ -13,4 +13,5 @@ header {
 .header__title {
     font-family: "Bungee Shade", sans-serif;
     font-size: 32px;
+    color: var(--color-black);
 }

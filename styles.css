@@ -85,19 +85,19 @@ a:focus-visible, button:focus-visible {
 .dark {
   --color-primary-extradark: mediumpurple;
   --color-primary-dark: purple;
-  --color-primary-light: indigo;
-  --color-secondary: darkmagenta;
-  --color-bg: rebeccapurple;
-  --color-white: black;
+  --color-primary-light: darkmagenta;
+  --color-secondary:indigo;
+  --color-bg: darkslateblue;
+  --color-white: #292929;
   --color-black: white;
   
-  --gradient-bg: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
-  , hotpink);
+  --gradient-bg: linear-gradient(to bottom right, midnightblue, darkslateblue, darkmagenta
+  , indigo);
   --gradient-button: linear-gradient(to bottom, violet, plum);
 
-  --card-bg: rebeccapurple;
+  --card-bg: mediumpurple;
   --card-text: white;
 
-  --tag-bg: rebeccapurple;
+  --tag-bg: indigo;
   --tag-text: lavender;
 }
