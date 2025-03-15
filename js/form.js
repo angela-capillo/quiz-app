@@ -17,6 +17,15 @@ questionForm.addEventListener("submit", (event) => {
   cardBookmark.className = "card__bookmark";
   cardBookmark.src = "./assets/icons/bookmark-white.svg";
 
+  cardIconButton.addEventListener("click", () => {
+    cardBookmark.classList.toggle("bookmarked");
+    if (cardBookmark.className.includes("bookmarked")) {
+      cardBookmark.src = "./assets/icons/bookmark-purple.svg";
+    } else {
+      cardBookmark.src = "./assets/icons/bookmark-white.svg";
+    }
+  });
+
   const cardTextQuestion = document.createElement("p");
   cardTextQuestion.className = "card__text";
   cardTextQuestion.textContent = data["new-question"];
@@ -29,6 +38,10 @@ questionForm.addEventListener("submit", (event) => {
   cardTextAnswer.className = "card__text card__text__answer text__hidden";
   cardTextAnswer.textContent = data["new-answer"];
 
+  cardButton.addEventListener("click", () => {
+    cardTextAnswer.classList.toggle("text__hidden");
+  });
+
   const cardCategories = document.createElement("ul");
   cardCategories.role = "list";
   cardCategories.className = "card__categories";
@@ -40,7 +53,13 @@ questionForm.addEventListener("submit", (event) => {
   cardCategories.append(cardTag);
   cardIconButton.append(cardBookmark);
 
-  card.append(cardIconButton, cardTextQuestion, cardButton, cardCategories);
+  card.append(
+    cardIconButton,
+    cardTextQuestion,
+    cardButton,
+    cardTextAnswer,
+    cardCategories
+  );
   container.append(card);
 });
 
