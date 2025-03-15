@@ -1,5 +1,5 @@
 const questionForm = document.querySelector('[data-js="form"]');
-const body = document.body;
+const container = document.querySelector('[data-js="form-container"]');
 
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -41,7 +41,7 @@ questionForm.addEventListener("submit", (event) => {
   cardIconButton.append(cardBookmark);
 
   card.append(cardIconButton, cardTextQuestion, cardButton, cardCategories);
-  body.append(card);
+  container.append(card);
 });
 
 const questionInput = document.querySelector('[data-js="new-question"]');
