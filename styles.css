@@ -18,23 +18,6 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
 
-  --color-primary-extradark: indigo;
-  --color-primary-dark: rebeccapurple;
-  --color-primary-light: mediumpurple;
-  --color-secondary: MediumOrchid;
-  --color-bg: lavender;
-  --color-white: white;
-  --color-black: black;
-  
-  --gradient-bg: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
-  , hotpink);
-  --gradient-button: linear-gradient(to bottom, mediumpurple, MediumOrchid);
-
-  --card-bg: lavender;
-  --card-text: black;
-
-  --tag-bg: white;
-  --tag-text: rebeccapurple;
 }
 
 
@@ -74,5 +57,57 @@ a:focus-visible, button:focus-visible {
 }
 
 .text__hidden {
+  display: none;
+}
+
+/* Colors */
+
+.light {
+  --color-primary-extradark: indigo;
+  --color-primary-dark: rebeccapurple;
+  --color-primary-light: mediumpurple;
+  --color-secondary: MediumOrchid;
+  --color-bg: lavender;
+  --color-white: white;
+  --color-black: black;
+  
+  --gradient-bg: linear-gradient(to bottom right, azure, LightGoldenRodYellow, aqua
+  , hotpink);
+  --gradient-button: linear-gradient(to bottom, mediumpurple, MediumOrchid);
+
+  --card-bg: lavender;
+  --card-text: black;
+
+  --tag-bg: white;
+  --tag-text: rebeccapurple;
+}
+
+.dark {
+  --color-primary-extradark: mediumpurple;
+  --color-primary-dark: #210a38;
+  --color-primary-light: purple;
+  --color-secondary: blueviolet;
+  --color-bg: indigo;
+  --color-white: #210a38;
+  --color-black: white;
+  
+  --gradient-bg: linear-gradient(to bottom right, midnightblue, darkslateblue, darkmagenta
+  , indigo);
+  --gradient-button: linear-gradient(to bottom, violet, plum);
+
+  --card-bg: mediumpurple;
+  --card-text: white;
+
+  --tag-bg: indigo;
+  --tag-text: lavender;
+}
+
+/* Icons */
+
+.light .icon-light {
+  display: none;
+}
+
+.dark .icon-dark {
   display: none;
 }

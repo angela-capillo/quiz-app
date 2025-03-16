@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee+Spice&family=Capriola&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/profile.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,15 +36,25 @@
           <p class="main-content__profile-about-text">I am a lethargic and pessimistic unicorn, rn on an adventure to the magical Candy Mountain with Pink and Blue.</p>
           <ul role="list" class="main-content__counter-container">
             <li class="main-content__counter-tag">
-              <img
+              <img class="icon-dark"
                 src="./assets/icons/question-purple.svg"
                 alt="Questions created"
               />
+              <img class="icon-light"
+              src="./assets/icons/question-light-purple.svg"
+              alt="Questions created"
+            />
               <p>54</p>
             </li>
             <li class="main-content__counter-tag">
               <img
+              class="icon-dark"
                 src="./assets/icons/bookmark-purple.svg"
+                alt="Bookmarks created"
+              />
+              <img
+              class="icon-light"
+                src="./assets/icons/bookmark-light-purple.svg"
                 alt="Bookmarks created"
               />
               <p>21</p>
@@ -53,10 +64,12 @@
         <section class="main-content__profile-settings">
           <h2>Settings</h2>
           <div class="settings-block">
-            <label>Dark mode</label>
-          <label class="switch">
-            <input type="checkbox">
+          <label class="switch__label"> 
+            <span>Dark mode</span>
+            <div class="switch">
+            <input id="mode" type="checkbox" data-js="mode-switch">
             <span class="slider round"></span>
+          </div>
           </label>
         </div>
         </section>
@@ -66,36 +79,58 @@
       <nav class="nav">
         <ul class="nav__list" role="list">
           <li class="nav__item">
-            <a href="./index.html" class="nav__icon-button"
-              ><img
-                class="nav__icon"
+            <a href="./index.html" class="nav__icon-button">
+              <img
+                class="nav__icon icon-dark"
                 src="./assets/icons/home-purple.svg"
                 alt="Home"
-            /></a>
+              />
+              <img
+                class="nav__icon icon-light"
+                src="./assets/icons/home-light-purple.svg"
+                alt="Home"
+              />
+          </a>
           </li>
           <li class="nav__item">
             <a href="./bookmarks.html" class="nav__icon-button"
-              ><img
-                class="nav__icon"
+              >
+              <img 
+                class="nav__icon icon-dark"
                 src="./assets/icons/bookmark-purple.svg"
                 alt="Bookmarks"
-            /></a>
+            />
+            <img 
+                class="nav__icon icon-light"
+                src="./assets/icons/bookmark-light-purple.svg"
+                alt="Bookmarks"
+            />
+          </a>
           </li>
           <li class="nav__item">
             <a href="./form.html" class="nav__icon-button"
-              ><img
-                class="nav__icon"
+              >
+              <img
+                class="nav__icon icon-dark"
                 src="./assets/icons/new-card-purple.svg"
                 alt="New quiz card"
-            /></a>
+            />
+            <img
+                class="nav__icon icon-light"
+                src="./assets/icons/new-card-light-purple.svg"
+                alt="New quiz card"
+            />
+          </a>
           </li>
           <li class="nav__item nav__item__active">
             <a href="./profile.html" class="nav__icon-button"
-              ><img
+              >
+              <img
                 class="nav__icon"
                 src="./assets/icons/profile-white.svg"
                 alt="Profile"
-            /></a>
+            />
+          </a>
           </li>
         </ul>
       </nav>

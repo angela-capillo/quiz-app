@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_29_5)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 77C60.4345 77 77 60.4345 77 40C77 19.5655 60.4345 3 40 3C19.5655 3 3 19.5655 3 40C3 60.4345 19.5655 77 40 77ZM36.5091 18.9909C36.5091 17.3391 37.8482 16 39.5001 16C41.1519 16 42.491 17.3391 42.491 18.9909V36.5091H60.0091C61.6609 36.5091 63 37.8482 63 39.5C63 41.1518 61.6609 42.4909 60.0091 42.4909H42.491V60.0091C42.491 61.6609 41.1519 63 39.5001 63C37.8482 63 36.5091 61.6609 36.5091 60.0091V42.4909H18.9909C17.3391 42.4909 16 41.1518 16 39.5C16 37.8482 17.3391 36.5091 18.9909 36.5091H36.5091V18.9909Z" fill="#A385E0"/>
+</g>
+<defs>
+<filter id="filter0_d_29_5" x="1" y="2" width="78" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_29_5"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_29_5" result="shape"/>
+</filter>
+</defs>
+</svg>
