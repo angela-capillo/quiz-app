@@ -101,3 +101,13 @@ a:focus-visible, button:focus-visible {
   --tag-bg: indigo;
   --tag-text: lavender;
 }
+
+/* Icons */
+
+.light .icon-light {
+  display: none;
+}
+
+.dark .icon-dark {
+  display: none;
+}
