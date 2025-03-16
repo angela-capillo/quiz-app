@@ -84,11 +84,11 @@ a:focus-visible, button:focus-visible {
 
 .dark {
   --color-primary-extradark: mediumpurple;
-  --color-primary-dark: purple;
-  --color-primary-light: darkmagenta;
-  --color-secondary:indigo;
-  --color-bg: darkslateblue;
-  --color-white: #292929;
+  --color-primary-dark: #210a38;
+  --color-primary-light: purple;
+  --color-secondary: blueviolet;
+  --color-bg: indigo;
+  --color-white: #210a38;
   --color-black: white;
   
   --gradient-bg: linear-gradient(to bottom right, midnightblue, darkslateblue, darkmagenta
